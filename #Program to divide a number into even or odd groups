@@ -1,0 +1,9 @@
+#Program to divide a number into even or odd groups
+#sonni juft yoki toq guruhga ajratish programmasi
+number = int(input("Enter a number: "))
+juft_son = "Juft"
+toq_son = "Toq"
+if number % 2 == 0:
+    print( juft_son)
+else:
+    print(toq_son)
