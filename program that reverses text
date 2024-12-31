@@ -1,0 +1,5 @@
+
+#program that reverses text
+text = input("Enter text and I will reverse it >>> ")
+reversed_text = text[::-1]
+print(reversed_text)
