@@ -1,0 +1,7 @@
+#Show only odd numbers from the entered numbers
+starting = int(input("Enter the beginning number and I will show you the odd numbers "))
+ending = int(input("Enter the ending number and I will show you the even numbers "))
+print("Thera are a odd numbers")
+for result in range(starting, ending + 1):
+    if result % 2 != 0:
+        print(result)
