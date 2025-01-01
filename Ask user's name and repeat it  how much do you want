@@ -1,0 +1,12 @@
+#asking the user's name
+#ismni necha marotaba takrorlashni so'raymiz
+name = input("What is your name? ")
+repeat = int(input("How many times would you like to repeat your name ? "))
+
+#code that repeats a name multiple times
+#bir ismni necha marotaba takrorlashni bajaradigan kod
+for repeteated_name in range(repeat):
+
+    # A serial number is added to each printout.
+    # har bir chop etishda tartib raqam qo'shamiz
+    print(f"{repeteated_name + 1} {name}")
