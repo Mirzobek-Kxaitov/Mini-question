@@ -1,0 +1,18 @@
+#word search game
+import random
+words = ["python","developer","code","programming","game"]
+#The words given here are written.
+selected_words = random.choice(words)
+
+compound_word = ''.join(random.sample(selected_words, len(selected_words)))
+print(f"Compound words: {compound_word}")
+
+while True:
+    answer = input("What word is this?: ")
+    if answer.lower() == selected_words:
+        print("You win!")
+        break
+    else:
+        print("You loose! You can play again")
+
+
