@@ -1,0 +1,7 @@
+#Game to find the longest name on the list
+names = ["Alexis","Rowling","Harry Potter","Blade","Santa Claus"]
+if names:
+    the_longest_name = max(names, key=len)
+    print(f"The longest name is {the_longest_name}")
+else:
+    print("The list of names is empty")
