@@ -1,0 +1,34 @@
+#dictionary for days of the week
+weekdays = {
+    1:"Monday",
+    2:"Tuesday",
+    3:"Wednesday",
+    4:"Thursday",
+    5:"Friday",
+    6:"Saturday",
+    7:"Sunday"
+}
+numbers = int(input("Enter the number for the day of the week " ))
+if numbers in weekdays:
+    print(f"Today is {weekdays[numbers]}.")
+else:
+    print("The number you entered does not correspond to a day of the week.")
+
+2------------------------
+numbers = int(input("Enter numbers of week (1-7): "))
+if numbers == 1:
+    print("Today is Monday")
+elif numbers == 2:
+    print("Today is Tuesday")
+elif numbers == 3:
+    print("Today is Wednesday")
+elif numbers == 4:
+    print("Today is Thursday")
+elif numbers == 5:
+    print("Today is Friday")
+elif numbers == 6:
+    print("Today is Saturday")
+elif numbers == 7:
+    print("Today is Sunday")
+else:
+    print("The number which your selected is not exist on weekdays ")
