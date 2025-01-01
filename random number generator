@@ -1,0 +1,13 @@
+import random #random number generator
+guess_number = random.randint(1, 100)
+#Selects a random number from 1 to 100
+while True: #continues until the correct number is found
+    guess = int(input("Guess a number between 1 and 100: "))
+    #saves the code entered by the user
+    if guess == guess_number: # if users code and guess_number code equal
+        print("You guessed right!") # this will be printer and stopped
+        break
+    elif guess < guess_number:
+        print("Too low!")
+    else:
+        print("Too high!")
