@@ -1,0 +1,20 @@
+# list of things the user can get
+list1 = []
+
+print(" Enter  your shopping list and type 'done' to finish.")
+while True:
+    #The while loop continues execution until break occurs.
+    things = input("Things: ")
+    #the user enters what they want to buy
+    if things.lower() == 'done':
+        #if the user types 'done' the program will terminate
+        break
+    list1.append(things)
+    #purchased items are added to list1
+
+print("what you bought")
+for item in list1:
+    print(f"{item}")
+
+
+
