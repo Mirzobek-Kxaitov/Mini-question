@@ -1,0 +1,10 @@
+file_name = input("Enter the file name (f.e: text.word): ")
+with open(file_name, "w")as file:
+    print("Enter your text and type 'done' for quit")
+    while True:
+        text = input('Matn: ')
+        if text.lower() == 'done':
+            break
+        file.write(text + '\n')
+
+print(f"\nThe file {file_name} has been written.")
