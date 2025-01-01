@@ -1,0 +1,22 @@
+#Words and how many times they are repeated
+text = input("Enter the text please: ")
+#asking the user to enter text
+entered_text = text.split()
+#to separate the words of the entered text into separate lines
+counted_words = {}
+#the text of the entered words
+
+for words in entered_text:
+    #extracts the words in the string one by one
+    if words in counted_words:
+        counted_words[words] += 1
+        #if a word that has been encountered once is encountered again, it will be counted again
+    else:
+        counted_words[words] = 1
+        #kIf the search word is not in the text, it will be set to 1
+
+
+print("Words and how many times they are repeated ")
+for words,result in counted_words.items():
+    print(f"{words}: {result}")
+
