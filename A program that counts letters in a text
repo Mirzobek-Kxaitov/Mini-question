@@ -1,0 +1,6 @@
+#A program that counts letters in a text
+text = "Python is best programming language"
+print(f"Text: {text}")
+letter = input("Which letter do you want to count? ")
+count_letter = text.count(letter)
+print(f"{letter} appears {count_letter} times in the text.")
