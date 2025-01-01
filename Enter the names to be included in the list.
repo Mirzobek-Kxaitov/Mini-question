@@ -1,0 +1,11 @@
+#The app Enter the names to be included in the list.
+names = []
+print("Enter the names to be included in the list.")
+while True:
+    name = input("Say the names >>> ")
+    if name.lower() == "done":
+        break
+    names.append(name)
+
+for item in names:
+    print(f"{item}")
