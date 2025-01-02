@@ -1,0 +1,20 @@
+#which number is big? python game
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter another number: "))
+
+if number1 > number2:
+    print(f"{number1} is bigger then {number2}")
+elif number1 < number2:
+    print(f"{number2} is bigger then {number1}")
+
+#find_the_largest_number python game
+def find_the_largest_number (son1,son2):
+    if son1 > son2:
+        return son1
+    else:
+        return son2
+
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter another number: "))
+result = find_the_largest_number(number1,number2)
+print(f"The bigger number is {result}")
