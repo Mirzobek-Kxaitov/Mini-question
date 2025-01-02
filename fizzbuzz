@@ -1,0 +1,13 @@
+for son in range(1, 51):
+    #1 dan 50 gacha bo‘lgan sonlarni chop etish
+    if son % 3 == 0 and son % 5 == 0:
+        #agar son 3ga ham 5ga ham bo'linadi deyilsa "% (raqam) == 0"  bu belgi bo'linsa degani
+        print("FizzBuzz")
+    elif son % 3 == 0:
+        #agar son 3ga bo'linsa
+        print("Fizz")
+    elif son % 5 == 0:
+        print("Buzz")
+        # agar son 5ga bo'linsa
+    else:
+        print(son)
