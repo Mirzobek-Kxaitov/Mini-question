@@ -1,0 +1,42 @@
+#Code program that calculates Uzbek currency in soums in Python
+one_usd = 12896
+one_euro = 13483
+one_rubl = 130
+one_tenge = 25
+
+sum = float(input("How many soums do you have?  "))
+currency = input("Which currency would you like to convert to? (USD $/ EUR€/ RUBL₽/ TENGE₸ )").upper()
+
+if currency == "USD":
+    result = sum / one_usd
+    print(f"{sum} sum = ${result:.2f} dollar ")
+elif currency == "EUR":
+    result = sum / one_euro
+    print(f"{sum} sum = €{result:.2f} euro ")
+elif currency == "RUBL":
+    result = sum / one_rubl
+    print(f"{sum} sum = ₽{result:.2f} rubl ")
+elif currency == "TENGE":
+    result = sum / one_tenge
+    print(f"{sum} sum = ₸ {result:.2f} tenge ")
+
+
+
+else:
+    print("Please enter a valid currency.")
+
+#Code program that calculates USD currency in Uzbek soums in Python
+one_usd = 12.896  # 1 USD = 12.896 ming so'm
+one_euro = 13.483  # 1 EUR = 13.483 ming so'm
+
+amount = float(input("How many dollars or euros do you have? "))
+currency = input("Which currency do you have? (USD/EUR): ").upper()
+
+if currency == "USD":
+    result = amount * one_usd * 1000  # Ming so'mni hisoblash uchun *1000
+    print(f"${amount} dollars = {result:,.2f} soums")
+elif currency == "EUR":
+    result = amount * one_euro * 1000  # Ming so'mni hisoblash uchun *1000
+    print(f"€{amount} euros = {result:,.2f} soums")
+else:
+    print("Please enter a valid currency.")
