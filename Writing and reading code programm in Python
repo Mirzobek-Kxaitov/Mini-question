@@ -1,0 +1,16 @@
+#Writing and reading code programm in Python
+
+with open("Reading_file.txt","w") as file:
+    file.write("My name is Bond,James Bond")
+
+
+with open("Reading_file.txt","a") as file:
+    file.write("\nMy surname is Bond only Bond")
+
+with open("Reading_file.txt","r") as file:
+    reading = file.read()
+
+print(reading)
+
+
+
